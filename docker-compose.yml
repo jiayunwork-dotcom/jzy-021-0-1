@@ -1,0 +1,9 @@
+services:
+  cpm:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - cpm-data:/data
+volumes:
+  cpm-data:
